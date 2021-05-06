@@ -10,6 +10,17 @@ export default function App() {
     marginRight: "5px"
   };
 
+
+  // Example show Routing from within a component
+
+  /* Todo lets extend the app
+    1) Create a new Route to serve component Users , 
+      data can be fetched from /profile
+
+    2) Extend app and display Comments within Post component
+    data can be fetched from post/:id/comments
+  */
+
   return (
     <Router>
       <div className="App">

@@ -7,9 +7,6 @@ export const Post = (props) => {
   let { id } = useParams();
   const [post, setPost] = useState({})
 
-  console.log('props', props)
-  console.log('id ' + id)
-
   useEffect(() => {
     const fetchPost = async () => {
       try {
@@ -28,7 +25,6 @@ export const Post = (props) => {
 
   for (let param of params) {
     const [key, value] = param;
-    console.log(key + ":" + value);
   }
 
   return (
