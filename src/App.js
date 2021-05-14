@@ -5,14 +5,13 @@ import { Post } from './Post'
 import { Home } from "./Home"
 
 export default function App() {
-    /* Todo lets extend the app
-    1) Create a new Route to serve component Users , 
-      data can be fetched from /profile
+  /*
+    note the path /posts/:id can be within this switch
+    or nested within the child component posts
 
-    2) Extend app and display Comments within Post component
-    data can be fetched from post/:id/comments
+    if within App , the <Post /> component is rendered only
+    if wihtin Posts component, both the Posts component and Post component is rendered
   */
-
   return (
     <Router>
       <div className="App">
@@ -25,9 +24,9 @@ export default function App() {
           </Link>
         </nav>
         <Switch>
-          {/* <Route path="/posts/:id">
+          <Route path="/posts/:id">
             <Post />
-          </Route> */}
+          </Route>
           <Route path="/posts">
             <Posts />
           </Route>
