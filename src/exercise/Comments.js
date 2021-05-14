@@ -1,0 +1,1 @@
+// renders a list of comments based on the post id

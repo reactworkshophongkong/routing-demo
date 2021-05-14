@@ -1,0 +1,1 @@
+// create user component which will be served when the user goes to /user
