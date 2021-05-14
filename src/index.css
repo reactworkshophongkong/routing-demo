@@ -15,3 +15,13 @@ code {
 .row {
   display: flex;
 }
+
+.link {
+  padding: 5px;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.link:hover {
+  border-bottom: 5px solid red;
+}
