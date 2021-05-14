@@ -5,11 +5,6 @@ import { Post } from './Post'
 import { Home } from "./Home"
 
 export default function App() {
-  const linkStyles = {
-    textDecoration: "none",
-    marginRight: "5px"
-  };
-
     /* Todo lets extend the app
     1) Create a new Route to serve component Users , 
       data can be fetched from /profile
@@ -22,10 +17,10 @@ export default function App() {
     <Router>
       <div className="App">
         <nav>
-          <Link style={linkStyles} to="/">
+          <Link className="link" to="/">
             Home
           </Link>
-          <Link style={linkStyles} to="/posts">
+          <Link className="link" to="/posts">
             Posts
           </Link>
         </nav>
